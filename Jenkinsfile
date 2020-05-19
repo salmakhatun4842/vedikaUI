@@ -18,7 +18,7 @@ stage('package build'){
  }
   
   stage('deploy artifacts'){
-     sh label: '', script: '''scp  /var/lib/jenkins/workspace/vedikas/vedika.tar.gz root@34.228.217.4:/root/clone/vedikaUI
+     sh label: '', script: '''scp  /var/lib/jenkins/workspace/angualr/vedika.tar.gz root@:54.208.230.196/root/clone/vedikaUI
 '''   
         }
 }
