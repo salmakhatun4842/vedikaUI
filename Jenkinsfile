@@ -10,5 +10,10 @@ node(){
         
     stage('Build') {
         sh label: '', script: 'ng build --prod'
-        }
-      }
+    }
+     
+stage('package build'){
+  sh "tar -zcvf vedika.tar.gz dist/AngStr/"
+
+   }
+}
