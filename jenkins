@@ -1,0 +1,13 @@
+node(){
+    stage('Git checkout') {
+        git 'https://https://github.com/salmakhatun4842/vedikaUI.git'
+    }
+        
+    stage('Install dependencies') {
+        sh label: '', script: 'npm install'
+        }
+        
+    stage('Build') {
+        sh label: '', script: 'ng build --prod'
+    }
+  
